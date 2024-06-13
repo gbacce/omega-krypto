@@ -10,6 +10,7 @@ import ResourcesPage from './pages/ResourcesPage';
 import ContactPage from './pages/ContactPage';
 import LogInPage from './pages/LogInPage';
 import RegistrationPage from './pages/RegistrationPage';
+import Demo from './pages/DemoPage';
 
 const router = createBrowserRouter([
     {
@@ -47,6 +48,10 @@ const router = createBrowserRouter([
             {
                 path: '/registration',
                 element: <RegistrationPage />
+            },
+            {
+                path: '/demo',
+                element: <Demo />
             }
         ]
     }

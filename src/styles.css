@@ -31,6 +31,11 @@ html {
     text-decoration: none;
     font-size: 24px;
     padding: 30px;
+    transition: color 0.5s ease;
+  }
+
+  .headerLink:hover {
+    color: #880c09;
   }
   
 
@@ -294,4 +299,48 @@ img {
 
 .greenSpan {
     color: #257b82;
+}
+
+.demo {
+    max-width: 1440px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-height: 525px;
+}
+
+.demoInput {
+    width: 450px;
+    max-width: 380px;
+    background-color: #d9d9d9;
+    height: 525px;
+    padding: 8px 24px;
+    border: 2px solid #880c09;
+}
+
+.demoParameters {
+    width: 284px;
+    background-color: #d9d9d9;
+    height: 525px;
+    padding: 8px;
+    border: 2px solid #880c09;
+}
+
+.demoOutput {
+    width: 450px;
+    background-color: #d9d9d9;
+    height: 525px;
+    padding: 8px 24px;
+    border: 2px solid #880c09;
+}
+
+.demoHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+textarea {
+    width: 360px;
+    height: 420px;
 }
