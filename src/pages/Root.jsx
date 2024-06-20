@@ -6,5 +6,10 @@ import React from 'react';
      return <div>
         <Header />
         <Outlet />
+        <div>
+        <div className='footer'>
+            ©2024 Omega Krypto, Inc. All Rights Reserved
+        </div>
+        </div>
      </div>
  }

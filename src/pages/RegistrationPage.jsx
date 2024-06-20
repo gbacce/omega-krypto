@@ -33,8 +33,9 @@ function RegistrationPage() {
         setPassword(event.target.value);
     }
 
-    return <div>
-        <div className='loginWrapper'>
+    return <div className='container'>
+        <div className='wrapper'>
+            <div className='loginWrapper'>
             <form onSubmit={handleFormSubmit}>
                 <label>Name</label>
                 <input value={name} onChange={handleNameChange} name='name'></input>
@@ -48,6 +49,7 @@ function RegistrationPage() {
                 <input value={password} onChange={handlePasswordChange} type='password' name='password' />
                 <button>Submit</button>
             </form>
+        </div>
         </div>
     </div>
 }

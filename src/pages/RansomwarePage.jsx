@@ -1,11 +1,13 @@
 import React from 'react';
 
 export default function RansomwarePage() {
-    return <div>
+    return <div className='container'>
         <div className='wrapper'>
             <div className='ribbon'>
             <div className='title'>RANSOMWARE</div>
-                <p><em>
+            </div>
+            <div className='quoteRibbon'>
+            <p><em>
                 "Data exfiltration has surged by 39% since last year, becoming the preferred goal for the attackers that gain access to a company’s network to download sensitive data to sell on the darknet. Ransomware certainly appears to have reached a critical sea change, even as organizations are investing more in safety nets like cyber insurance which have [a portion of] ransomware payouts included in coverage policies.  So, cybercriminals have concluded that using stealth tactics to stay under the radar and steal sensitive, valuable information to sell is the better investment of their effort.”</em></p>
                 <p>- Rick Hanson, President, Delinea</p>
             </div>
@@ -22,14 +24,16 @@ export default function RansomwarePage() {
                 <p>To demonstrate <span>IMMUNE</span>’s simplicity and speed, we have developed a web demo in JavaScript that you can test for yourself.   We also invite you to review our “Introduction to Poly-Substitution Encryption” white paper.</p>
             </div>
             <div className='imageWrapper border'>
-            <img src='/simplifyTheComplex.png' alt='logo' width={800} />
+            <img src='/simplifyTheComplex.png' alt='logo' className='imgLarge' />
         </div>
 
-        <div className='ribbon'>
-                <div className='subtitle'>
+        <div className='subsectionRibbon'>
+                <div className='subsectionTitle'>
                     THE STATE OF RANSOMWARE
                 </div>
-                                <p><em>“There’s a ransomware attack somewhere in the world every 11 seconds.”</em></p>
+            </div>
+            <div className='quoteRibbon'>
+            <p><em>“There’s a ransomware attack somewhere in the world every 11 seconds.”</em></p>
                     <p>-Clare Sullivan, Executive Director, Georgetown University’s Cyber Smart Research Centre (12/4/23)
                         </p>
             </div>
@@ -45,17 +49,17 @@ export default function RansomwarePage() {
                     <p>The primary challenge facing Fortune 500 companies is to safeguard critical data and personally identifiable information (“PII”) from being abducted by unauthorized processes and users.</p>
                 </div>
                 <div className='imageWrapperHalf right border'>
-                    <img src='/ransomPayment.png' alt='logo' width={680} />
+                    <img src='/ransomPayment.png' alt='logo' className='imgMedium' />
                 </div>
             </div>
 
-            <div className='textWrapper medium smSpaced'>
+            <div className='quoteRibbon medium smSpaced'>
                 <p><em>“Digital freedom stops where that of users begins.  Nowadays, digital evolution must no longer be offered to a customer in trade-off between privacy and security.  Privacy is not for sale.  It’s a valuable asset to protect.”</em></p>
                 <p>-Stephane Nappo, Global Head Information Security, Société Générale International Banking.
 </p>
             </div>
-            <div className='ribbon'>
-                <div className='subtitle'>RANSOMWARE TACTICS & STATS</div>
+            <div className='subsectionRibbon'>
+                <div className='subsectionTitle'>RANSOMWARE TACTICS</div>
             </div>
             <div className='fullscreenTextWrapperSection'>
                 <p>To deploy a ransomware attack, cyberattackers must first gain access to a victim’s
@@ -82,7 +86,7 @@ approaches to gain entry:</p>
                 <p>Today’s ransomware incorporates a sinister dimension by surreptitiously pilfering files.   Contrary to “conventional ransomware,” cybercriminals are extracting or exfiltrating critical business and sensitive data and transferring it to a remote system under the attacker’s control.  Sensitive data – ranging from intellectual property to PII - is now in the control of cyberattackers.</p>
                 </div>
                 <div className='imageWrapperHalf right border'>
-                    <img src='/ransomMotivation.png' alt='logo' width={680} />
+                    <img src='/ransomMotivation.png' alt='logo' className='imgMedium' />
                 </div>
             </div>
             <div className='fullscreenTextWrapperSection'>
@@ -95,7 +99,7 @@ approaches to gain entry:</p>
             </div>
             <div className='alternatingTextWrapper'>
                 <div className='imageWrapperHalf left border'>
-                    <img src='/ransomwareFrequency.png' alt='logo' width={680} />
+                    <img src='/ransomwareFrequency.png' alt='logo' className='imgMedium' />
                 </div>
                 <div className='textWrapperHalf rightText'>
                 <p className='medium'>
@@ -108,22 +112,21 @@ approaches to gain entry:</p>
                 <p>Many organizations do not detect breaches on their own. On average, an organization’s security team only identifies one out of three data breaches. In other cases, the breaches were found by a third party, or the attackers informed organizations they’ve been infiltrated. </p>
             </div>
             <div className='alternatingTextWrapper'>
-                <div className='imageWrapperHalf left border'>
-                    <img src='/timeBreach.png' alt='logo' width={680} />
+                <div className='imageStack left border'>
+                    <img src='/timeBreach.png' alt='logo' className='imgMedium' />
                 </div>
-                <div className='textWrapperHalf centerText medium'></div>
-            </div>
-            <div className='alternatingTextWrapper'>
-                <div className='textWrapperHalf centerText medium'></div>
+                <div className='imageStack'>
+                <div className='spacer'></div>
                 <div className='imageWrapperHalf right border'>
-                    <img src='/costBreach.png' alt='logo' width={680} />
+                    <img src='/costBreach.png' alt='logo' className='imgMedium' />
                 </div>
+            </div>
             </div>
             <div className='fullscreenTextWrapperSection'>
             </div>
             <div className='alternatingTextWrapper'>
             <div className='imageWrapperHalf left border'>
-                    <img src='/fundingSource.png' alt='logo' width={680} />
+                    <img src='/fundingSource.png' alt='logo' className='imgMedium' />
                 </div>
                 <div className='textWrapperHalf rightText'>
                 <p>Funding a ransomware payment usually involves multiple monetary sources.</p>
@@ -151,7 +154,7 @@ approaches to gain entry:</p>
             
             <div className='alternatingTextWrapper'>
                     <div className='imageWrapperHalf left border'>
-                        <img src='/successRate.png' alt='logo' width={680} />
+                        <img src='/successRate.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className='textWrapperHalf rightText'>
                     <p>Sophos’ 2024 global survey reports 94% of organizations hit by ransomware stated the cybercriminals attempted to compromise their backups during the attack, with an average success rate of 57%  across all sectors. </p>
@@ -167,20 +170,22 @@ approaches to gain entry:</p>
                 </div>
 
                 <div className='imageWrapperHalf right border'>
-                    <img src='/compromisedBackups.png' alt='logo' width={680} />
+                    <img src='/compromisedBackups.png' alt='logo' className='imgMedium' />
                 </div>
             </div>
-            <div className='ribbon'>
-                <div className='subtitle'>BIG GAME HUNTING</div>
-                <p><em>“CEOs are fully aware of the threats to their business from cyberattacks.  Yet, our research shows most lack confidence in their organization’s ability to avert or minimize such attacks.  They learn how to be cyber resilient only after their organization experiences a breach.  This reactionary way of treating cybersecurity results in greater risk of attacks and higher costs to remediate them.”</em></p>
+            <div className='subsectionRibbon'>
+                <div className='subsectionTitle'>BIG GAME HUNTING</div>
+            </div>
+            <div className='quoteRibbon'>
+            <p><em>“CEOs are fully aware of the threats to their business from cyberattacks.  Yet, our research shows most lack confidence in their organization’s ability to avert or minimize such attacks.  They learn how to be cyber resilient only after their organization experiences a breach.  This reactionary way of treating cybersecurity results in greater risk of attacks and higher costs to remediate them.”</em></p>
                 <p>-Accenture, The Cyber-Resilient CEO 2023</p>
             </div>
             <div className='imageWrapper border'>
-            <img src='/globalCost.png' alt='logo' width={800} />
+            <img src='/globalCost.png' alt='logo' className='imgMedium' />
         </div>
         <div className='alternatingTextWrapper spaced'>
                     <div className='imageWrapperHalf left border'>
-                        <img src='/ransomwareGrowth.png' alt='logo' width={680} />
+                        <img src='/ransomwareGrowth.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className='textWrapperHalf rightText medium'>
                     <p>Reported global ransomware attacks in 2022 totaled 2,531, with financially motivated cybercrime accounting for the highest volume of incidents (74%).  Ransomware or malicious scripts represented 82% of those attacks.</p>
@@ -192,38 +197,40 @@ approaches to gain entry:</p>
                 </div>
 
                 <div className='imageWrapperHalf right border'>
-                    <img src='/ransomwareGrowth2.png' alt='logo' width={680} />
+                    <img src='/ransomwareGrowth2.png' alt='logo' className='imgMedium' />
                 </div>
             </div>
             <div className='alternatingTextWrapper spaced'>
                     <div className='imageWrapperHalf left border'>
-                        <img src='/regionalRansomware.png' alt='logo' width={680} />
+                        <img src='/regionalRansomware.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className='textWrapperHalf rightText medium'>
                     <p>North America remains the most targeted area, accounting for 50% (2,330) of global ransomware attacks in 2023.  </p>
                     </div>
                 </div>
-                <div className='ribbon'>
+                <div className='quoteRibbon'>
                 <p><em>"The bad guys have figured out it's not the number of attacks. It's where you attack.  So, they're gaining access to data databases that have large volumes of data.”</em></p>
 <p>John Riggi, National Cybersecurity Advisor, American Hospital Association</p>
             </div>
-        <div className='video' />
-        </div>
-        <div className='ribbon'>
+            <video controls>
+                <source src="/Ransomware_Breach_Examples.mp4" type="video/mp4" />
+                Sorry, your browser doesn't support videos.
+            </video>
+        <div className='quoteRibbon'>
                 <p><em>“It quickly dawned on us how ill-prepared we were and how little we actually knew about the real risks of being hit by something like that. We did not understand how severe the risk could be. We couldn’t even imagine it.”
 </em></p>
 <p>CEO of a $5 billion European company.  The CEO Report on Cyber Resilience, Istari & Oxford University</p>
             </div>
             <div className='imageWrapper border spaced'>
-            <img src='/globalIncidents.png' alt='logo' width={800} />
+            <img src='/globalIncidents.png' alt='logo' className='imgLarge' />
         </div>
         <div className='imageWrapper border spaced'>
-            <img src='/globalIncidents2.png' alt='logo' width={800} />
+            <img src='/globalIncidents2.png' alt='logo' className='imgLarge' />
         </div>
-        <div className='textWrapper medium spaced'>Neither paying the ransom nor hoping cyber insurance will cover losses is an effective strategy for mitigating an attack.</div>
+        <div className='fullscreenTextWrapperSection medium spaced'>Neither paying the ransom nor hoping cyber insurance will cover losses is an effective strategy for mitigating an attack.</div>
         <div className='alternatingTextWrapper spaced'>
                     <div className='imageWrapperHalf left border'>
-                        <img src='/cyberInsurance.png' alt='logo' width={680} />
+                        <img src='/cyberInsurance.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className='textWrapperHalf rightText medium'>
                     <p>Almost half (41%) of organizations with cyber insurance did not receive as much coverage as they expected and, in some cases, did not receive any coverage due to an exception by the insurer.</p>
@@ -235,82 +242,79 @@ approaches to gain entry:</p>
                 </div>
 
                 <div className='imageWrapperHalf right border'>
-                    <img src='/breachCost.png' alt='logo' width={680} />
+                    <img src='/breachCost.png' alt='logo' className='imgMedium' />
                 </div>
                 </div>
 
                 <div className='alternatingTextWrapper spaced'>
                     <div className='imageWrapperHalf left border'>
-                        <img src='/paymentsReceived.png' alt='logo' width={680} />
+                        <img src='/paymentsReceived.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className='textWrapperHalf rightText medium'>
                     <p>Cybercriminals reached an unprecedented milestone, surpassing $1B in payments from victimized organizations.</p>
                     </div>
                 </div>
 
-                <div className='textWrapper'>
-                    <h3>This $1.1 Billion ransom payment and additional “costs” to remedy the situation does not include the harmful short- or long-term consequences of these organizations’ apparent inability to protect and shield the PII of their clientele, students, employees, or customers.</h3>
-                    <h3>Beyond the actual ransom payments, the average cost of each ransomware attack was over $5M.Beyond the actual ransom payments, the average cost of each ransomware attack was over $5M.</h3>
+                <div className='fullscreenTextWrapperSection'>
+                    <p>This $1.1 Billion ransom payment and additional “costs” to remedy the situation does not include the harmful short- or long-term consequences of these organizations’ apparent inability to protect and shield the PII of their clientele, students, employees, or customers.</p>
+                    <p>Beyond the actual ransom payments, the average cost of each ransomware attack was over $5M.Beyond the actual ransom payments, the average cost of each ransomware attack was over $5M.</p>
                 </div>
 
                 <div className='imageWrapper border'>
-                    <img src='/totalCost.png' alt='logo' width={900} />
+                    <img src='/totalCost.png' alt='logo' className='imgLarge' />
                 </div>
 
-                <div className='textWrapper'>
-                    <h3>As ransomware groups are drawn to carry out more attacks in what they consider a lucrative industry, many experts suggest that the highly public nature of ransomware serves as a kind of advertising, constantly pulling in more opportunistic attacks.</h3>
+                <div className='fullscreenTextWrapperSection'>
+                    <p>As ransomware groups are drawn to carry out more attacks in what they consider a lucrative industry, many experts suggest that the highly public nature of ransomware serves as a kind of advertising, constantly pulling in more opportunistic attacks.</p>
                 </div>
 
-                <div className='textWrapper spaced'>
-                <h2><em>"Everybody sees all these ransomware attacks. Like sharks that smell blood in the water, criminals tend to flock to where the money is being made."</em></h2>
+                <div className='quoteRibbon spaced'>
+                <p><em>"Everybody sees all these ransomware attacks. Like sharks that smell blood in the water, criminals tend to flock to where the money is being made."</em></p>
 <p>-Allan Liska, Threat Analyst, Recorded Future</p>
             </div>
 
-                    <div className='ribbon'>
-                    <div className='subtitle'>
-                        USA
+                    <div className='subsectionRibbon'>
+                    <div className='subsectionTitle'>
+                        United States of America
                     </div>
-                    <em>Cybersecurity risks are a fundamental type of risk for all organizations to manage.  Potential impacts to organizations from cybersecurity risks include 
-higher costs, lower revenue, reputation damage, 
-and the impairment of innovation..”</em>
-        <p>- United States’ National Institute of Standards (NIST), Cybersecurity Framework 2.0</p>
+                
         </div>
 
-        <div className='textWrapper spaced'><h2>The United States continues to lead all countries and global regions with an average cost per data breach of $9.48M.</h2></div>
+        <div className='fullscreenTextWrapperSection smSpaced'><p>The United States continues to lead all countries and global regions with an average cost per data breach of $9.48M.</p></div>
         <div className='imageWrapper border'>
-                    <img src='/ransomwareUsa.png' alt='logo' width={900} />
+                    <img src='/ransomwareUsa.png' alt='logo' className='imgLarge' />
                 </div>
 
-                <div className='alternatingTextWrapper'>
-                <div className='imageWrapperHalf left border spaced'>
-                    <img src='/infrastructure.png' alt='logo' width={700} />
+                
+
+                <div className='alternatingTextWrapper spaced'>
+                <div className='imageStack left border'>
+                    <img src='/infrastructure.png' alt='logo' className='imgMedium' />
                 </div>
-                <div className='textWrapperHalf centerText medium'></div>
-            </div>
-
-            <div className='alternatingTextWrapper'>
-                <div className='textWrapperHalf centerText medium'></div>
-                <div className='imageWrapperHalf right border'>
-                    <img src='/crimeType.png' alt='logo' width={700} />
+                <div className='imageStack'>
+                <div className='spacer'></div>
+                <div className='imageWrapperHalf right border spaced'>
+                    <img src='/crimeType.png' alt='logo' className='imgMedium' />
                 </div>
-            </div>
+                 </div>
+                 </div>
 
 
-            <div className='ribbon'>
-                    <div className='subtitle'>
+            <div className='subsectionRibbon spaced'>
+                    <div className='subsectionTitle'>
                         SMALL AND MIDSIZE BUSINESSES
                     </div>
             </div>
 
-            <div className='textWrapper spaced'><h2>While companies of all sizes have experienced a substantial increase in cyberattacks and ransomware, there’s been a dramatic spike in attacks focused on small and midsize businesses (SMBs) in recent years.</h2></div>
+            <div className='fullscreenTextWrapperSection smSpaced'><p>While companies of all sizes have experienced a substantial increase in cyberattacks and ransomware, there’s been a dramatic spike in attacks focused on small and midsize businesses (SMBs) in recent years.</p></div>
 
             <div className='imageWrapper border'>
-                    <img src='/businessAffected.png' alt='logo' width={900} />
+                    <img src='/businessAffected.png' alt='logo' className='imgLarge' />
                 </div>
 
-            <div className='textWrapper spaced'><h3>SMBs account for 40% and 50%, respectively, of the GDP.</h3></div>
-            <div className='textWrapper spaced'><h3>43% of cyberattacks In the US are targeted at SMBs, 
-yet only 14% are adequately prepared to defend themselves. </h3></div>
+            <div className='fullscreenTextWrapperSection'><p>SMBs account for 40% and 50%, respectively, of the GDP.</p></div>
+            <div className='fullscreenTextWrapperSection'><p>43% of cyberattacks In the US are targeted at SMBs, 
+yet only 14% are adequately prepared to defend themselves. </p></div>
 
             <div className='roeSubtitle center'>Accenture Cybercrime Study</div>
             <div className='fullscreenTextWrapperSection'>
@@ -325,9 +329,11 @@ yet only 14% are adequately prepared to defend themselves. </h3></div>
                     <ul><span className='greenSpan'>Valuable Data: </span>Despite their size, mid-market companies often handle significant amounts of valuable data, including personal customer information, financial records, and intellectual property.</ul>
                     <ul><span className='greenSpan'>Attractive Targets: </span>Cybercriminals view this data as highly lucrative, making these companies high payoff targets.</ul>
             </div>
-            <div className='ribbon'>
+            <div className='quoteRibbon'>
                 <p><em>“The companies that do the best job on managing a user’s privacy will be the companies that ultimately are the most successful.”</em></p>
 <p>-Fred Wilson, Co-Founder Union Square Ventures</p>
+            </div>
+            <h1 className='silver'>For more information, contact info@omegakrypto.com.</h1>
             </div>
     </div>
 }

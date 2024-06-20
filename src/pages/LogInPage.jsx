@@ -19,7 +19,8 @@ function LogInPage() {
         setPassword(event.target.value);
     }
 
-    return <div>
+    return <div className='container'>
+        <div className='wrapper'>
         <div className='loginWrapper'>
             <form onSubmit={handleFormSubmit}>
                 <label>Email</label>
@@ -29,6 +30,7 @@ function LogInPage() {
                 <button>Submit</button>
             </form>
             Not signed up? <Link to='/registration'>Register</Link>
+        </div>
         </div>
     </div>
 }

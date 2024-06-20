@@ -1,66 +1,88 @@
 import React from 'react';
 
 export default function PrivacyPage() {
-    return <div>
+    return <div className='container'>
         <div className='wrapper'>
             <div className='ribbon'>
                 <div className='title'>
                     DATA PRIVACY
                 </div>
-                                <p><em>“It is increasingly vital for organizations to approach privacy management as
+            </div>
+            <div className='quoteRibbon'>
+            <p><em>“It is increasingly vital for organizations to approach privacy management as
                     table-stakes, as consumers and regulators alike put privacy rights at the
                     forefront.”</em></p>
                     <p>-Jason Wesbecher, CEO at TrustArc
                         </p>
             </div>
-            <div className='ribbon'>
-            <div className='subtitle'>
+            <div className='subsectionRibbon'>
+            <div className='subsectionTitle'>
                 THE STATE OF ENCRYPTION
                 </div>
             </div>
 
             <div className='alternatingTextWrapper'>
                 <div className='textWrapperHalf centerText medium'>
-                    <p>Cryptography or encryption?</p>
+                    <h2>Cryptography or encryption?</h2>
                 </div>
                 <div className='imageWrapperHalf right border'>
-                    <img src='/cryptographyEncryption.png' alt='logo' width={680} />
+                    <img src='/cryptographyEncryption.png' alt='logo' className='imgMedium' />
                 </div>
             </div>
 
 
             <div className='alternatingTextWrapper'>
-                <div className='imageWrapperHalf left border'>
-                    <img src='/mesopotamia.png' alt='logo' width={900} />
+                <div className='imagestack marginRight'>
+                    <div className='stackedImage border'>
+                    <img src='/mesopotamia.png' alt='logo' className='imgMedium' />
+                    </div>
+                    <div className='spacer'/>
+                    <div className='stackedImage border'>
+                    <img src='/netscape.png' alt='logo' className='imgMedium' />
+                    </div>
                 </div>
-                <div className='textWrapperHalf centerText medium'></div>
+                <div className='imagestack border'>
+                    <div className='spacer'/>
+                    <div className='spacer2'/>
+                    <div className='stackedImage alignRight border'>
+                    <img src='/worldwar.png' alt='logo' className='imgMedium' />
+                    </div>
+                </div>
+                    
             </div>
 
-            <div className='alternatingTextWrapper'>
-                <div className='textWrapperHalf centerText medium'></div>
-                <div className='imageWrapperHalf right border'>
-                    <img src='/worldwar.png' alt='logo' width={900} />
-                </div>
-            </div>
-
-            <div className='alternatingTextWrapper'>
-                <div className='imageWrapperHalf left border'>
-                    <img src='/netscape.png' alt='logo' width={900} />
-                </div>
-                <div className='textWrapperHalf centerText medium'></div>
-            </div>
-
-            <div className='textWrapper medium centerText spaced'>
+            <div className='fullscreenTextWrapperSection'>
                 <p>Advanced Encryption Standard (AES) is a specification for the encryption of
 electronic data established by the U.S National Institute of Standards and Technology
 (NIST) in 2001. AES is widely used today as it is a much stronger than DES and triple DES
 despite being harder to implement.</p>
             </div>
-            <div className="imageWrapper border" >
-                <img src='/aes.png' alt='logo' width={800} />
+            <div className="imageWrapper border smSpaced" >
+                <img src='/aes.png' alt='logo' className='imgLarge' />
             </div>
-            <div className='video' />
-            <div className='ribbon'>
+            <div className='fullscreenTextWrapperSection'>
+                <p>An essential tool for digital security and cyberprivacy, encryption technologies are now
+used to protect confidential digital information stored on computer systems (data-at-rest),
+and data transmitted via computer networks, including the Internet (data-in-transit).</p>
+            </div>
+            <div className='fullscreenTextWrapperSection'>
+                <p>Today’s de-facto standard of encryption is AES-256, labeled as “sufficient” by the US
+government for the transmission of Top Secret/SCI information. At the same time,
+significant work is now being dedicated to Post Quantum Computing (PQC) encryption
+algorithms as well as other alternative solutions.</p>
+            </div>  
+            <div className='fullscreenTextWrapperSection'>
+                <p>While symmetric ciphers like AES plans to use 512 bit keys and public key ciphers like
+RSA plan to use 4,096 bit keys in an attempt to resist a quantum attack, as the number
+of qubits keeps growing, their key length requirements exponentially expand as well.
+Soon Megabit-long keys will be used, subsequently increased to Gigabit-long keys,
+Terabit-long keys, and so on.</p>
+            </div>              
+            <video controls>
+            <source src="/State_of_Encryption.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support videos.
+        </video>
+            <div className='quoteRibbon'>
                 <p><em>“Treating cloud environments as an extension of existing infrastructure while
 maintaining exclusive control and security of data, especially sensitive data, is
 key to cloud security.</em></p>
@@ -70,15 +92,13 @@ ensuring the utmost integrity and confidentiality of their valuable data.”
                     </em></p>
 <p>Sebastien Cano, Senior Vice President, Thales</p>
             </div>
-            <div className='ribbon'>
-            <div className='subtitle'>
+            <div className='subsectionRibbon'>
+            <div className='subsectionTitle'>
                 DATA TRAILS
             </div>
-                <h3>"TRAILS"</h3>
-                <h4>A mark or a series of signs or objects left behind
-by the passage of someone or something.</h4>
+                
             </div>
-            <div className='ribbon'>
+            <div className='quoteRibbon'>
             <p><em>
             “How existing data might not be safe is something that’s a little bit scary, so
 someone can steal your data now which is fully encrypted now according to
@@ -108,19 +128,19 @@ using today’s strongest encryption, cybercriminals are already collecting such
 encrypted data that, once quantum computers become big enough and reliable
 enough, they will decrypt that information and use it for their devious plans.</p>
 </div>
-<div className='imageWrapperHalf right'>
-                        <img src='/simplifycomplex.png' alt='logo' width={680} />
+<div className='imageWrapperHalf border right'>
+                        <img src='/simplifycomplex.png' alt='logo' className='imgMedium' />
                     </div>
 </div>
 <div className='fullscreenTextWrapperSection'>
 </div>
                 
-            <div className='ribbon'>
-            <div className='subtitle'>
+            <div className='subsectionRibbon'>
+            <div className='subsectionTitle'>
             DATA RULES OF ENGAGEMENT
         </div>
                 </div>
-        <div className='textWrapper'>
+        <div className='fullscreenTextWrapperSection'>
                 <p>The data privacy landscape has changed considerably in recent years. In an era
 where every click, tap, or keystroke leaves a digital trail, people are becoming much
 more aware of and disconcerted about how companies use their personal data,
@@ -169,8 +189,8 @@ regardless of the locality of their headquarters - operating in EU countries tha
 goods or services to EU citizens or monitors the behavior of data sub ects must comply
 with GDPR:</p>
                     </div>
-                    <div className='imageWrapperHalf right'>
-                        <img src='/gdpr.png' alt='logo' width={680} />
+                    <div className='imageWrapperHalf right border'>
+                        <img src='/gdpr.png' alt='logo' className='imgMedium' />
                     </div>
                 </div>
             
@@ -191,7 +211,7 @@ ensure compliance.</p>
 
             <div className='alternatingTextWrapper'>
                 <div className='imageWrapperHalf left border'>
-                    <img src='/usa1.png' alt='logo' width={680} />
+                    <img src='/usa1.png' alt='logo' className='imgMedium' />
                 </div>
                 <div className='textWrapperHalf rightText'>
                 <p>
@@ -212,13 +232,13 @@ ensure compliance.</p>
                     </p>
                     </div>
                     <div className='imageWrapperHalf right border'>
-                        <img src='/usa2.png' alt='logo' width={680} />
+                        <img src='/usa2.png' alt='logo' className='imgMedium' />
                     </div>
                 </div>
 
                 <div className='alternatingTextWrapper'>
                 <div className='imageWrapperHalf left border'>
-                    <img src='/usa3.png' alt='logo' width={680} />
+                    <img src='/usa3.png' alt='logo' className='imgMedium' />
                 </div>
                 <div className='textWrapperHalf rightText'>
                 <p>
@@ -237,7 +257,7 @@ ensure compliance.</p>
 
                     </div>
                     <div className='imageWrapperHalf right border'>
-                        <img src='/usa4.png' alt='logo' width={680} />
+                        <img src='/usa4.png' alt='logo' className='imgMedium' />
                     </div>
                 </div>
                 
@@ -255,6 +275,7 @@ ensure compliance.</p>
             As data breaches continue to cause havoc, mindsets are somewhat shifting towards better protecting individuals.  However, it will take more time to fully develop and enforce specific data privacy laws – thus, bringing the US in fuller alignment with the EU’s mindset and laws.
             </p>
             </div>
+            <h1 className='silver'>For more information, contact info@omegakrypto.com.</h1>
         </div>
     </div>
 }

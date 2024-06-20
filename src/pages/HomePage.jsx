@@ -2,31 +2,34 @@ import React from 'react';
 import { NavLink } from 'react-router-dom';
 
 export default function HomePage() {
-    return <div>
-        <div className="logoContainer">
-            <img src='/logo.png' alt='logo' width={300} />
+    return <div className='container'>
+            <div className="wrapper">
+            <div className="logoContainer">
+            <img src='/logo.png' alt='logo' className='homeLogo' />
         </div>
         <div className="tagline">
             <h3>IMMUNIZE YOUR SENSITIVE DATA</h3>
         </div>
-            <div className="wrapper">
-                <div className="imageWrapper" >
-                    <div className='imageWrapperHalf left border'>
-                        <img src='/privacy.png' alt='logo' width={680} />
+                <div className="alternatingTextWrapper" >
+                    <div className='imagestack left border'>
+                        <img src='/privacy.png' alt='logo' className='imgMedium' />
                     </div>
+                    <div className='imagestack right border'>
+                    <div className='spacer' />
                     <div className='imageWrapperHalf right border'>
-                    <img src='/infoprivacy.png' alt='logo' width={680} />
+                    <img src='/infoprivacy.png' alt='logo' className='imgMedium' />
+                    </div>
                     </div>
                 </div>
-                <div className="textWrapper smSpaced">
+                <div className="fullscreenTextWrapperSection smSpaced">
                     <p>As more digital data and personally identifiable information (“PII”) are stored in and moved across private and public clouds, databases, apps and services, the discovery of any crack or hole in digital security defenses by unauthorized individuals or groups immediately becomes an insidious and expensive threat to individuals, small businesses, enterprises and governments.</p>
                     <p>All of us are at risk of experiencing a data breach or cyber attack.  Hackers and cybercriminals come up with new ways every day to steal sensitive information and PII that they can publicly disclose, ask for ransom, or sell on the dark web. Even if it is encrypted today with existing standards, cybercriminals can store information until a later date and then decrypt it - using it in the same way as if the data were not encrypted.</p>
                     <p>Companies, hospitals, universities, and government agencies are struggling to protect themselves from cyberattacks.  Despite these efforts, data breaches continue to increase year-over-year.</p>
                 </div>
-                <div className='imageWrapper border'>
-                    <img src='/databreaches.png' alt='logo' width={680} />
+                <div className='imageWrapper border spaced'>
+                    <img src='/databreaches.png' alt='logo' className='imgMedium' />
                 </div>
-                <div className="homeRibbon">
+                <div className="quoteRibbon spaced">
                     <p>Continuing the current path of pursuing increasingly complex algorithms cannot guarantee either secrecy or unbreakability.</p>
                     <p>Increasing the complexity while they remain vulnerable does not seem to be the right approach.</p>
                 </div>
@@ -53,7 +56,7 @@ cryptanalytic attacks by any means, including quantum computing.
                     </p>
                     </div>
                     <div className='imageWrapperHalf right'>
-                        <img src='/immune.png' alt='logo' width={680} />
+                        <img src='/immune.png' alt='logo' className='imgMedium' />
                     </div>
                 </div>
                 <div className='fullscreenTextWrapperSection'>
@@ -63,7 +66,10 @@ and data privacy standards and mandates, including PCI DSS, HIPAA, GDPR, and man
 others.</p>
 <p className='center'><NavLink to='/login' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
                 </div>
-                <div className="video"></div>
+                <video controls>
+                    <source src="/Home.mp4" type="video/mp4" />
+                    Sorry, your browser doesn't support videos.
+                </video>
                 <div className="alternatingTextWrapper">
                     <div className="textStack leftText">
                         <p>Accounting for 87% of all comprised data, customer and employee personal identifiable information, or PII, were the most egregious.</p>
@@ -71,17 +77,17 @@ others.</p>
                         <p>Employee PII accounts for 40% of all breaches.</p>
                     </div>
                     <div className="imageStack">
-                        <div className='stackedImage border'>
-                            <img src='/firstPlace.png' alt='logo' width={550} />
+                        <div className='stackedImage border alignRight'>
+                            <img src='/firstPlace.png' alt='logo' className='imgSmall' />
                         </div>
-                        <div className='stackedImage border'>
-                            <img src='/secondPlace.png' alt='logo' width={550} />
+                        <div className='stackedImage border alignRight'>
+                            <img src='/secondPlace.png' alt='logo' className='imgSmall' />
                         </div>
                     </div>
                 </div>
                 <div className="alternatingTextWrapper spaced">
                     <div className='imageWrapperHalf left border'>
-                        <img src='/dataBreachCost.png' alt='logo' width={680} />
+                        <img src='/dataBreachCost.png' alt='logo' className='imgMedium' />
                     </div>
                     <div className="textWrapperHalf rightText">
                     <p>
@@ -89,12 +95,12 @@ others.</p>
                     </p>
                     </div>
                 </div>
-                <div className='fullscreenTextWrapper centerText spaced'>
-                    <h2>A prime example of much higher per record costs:</h2>
-                    <h2>Healthcare:  $408 per records</h2>
-                    <h2>(US Dept. Health & Human Services, Cybersecurity Unit, 2022)</h2>
+                <div className='fullscreenTextWrapper largeText spaced'>
+                    <p>A prime example of much higher per record costs:</p>
+                    <p>Healthcare:  $408 per records</p>
+                    <p>(US Dept. Health & Human Services, Cybersecurity Unit, 2022)</p>
                 </div>
-                <div className="ribbon">
+                <div className="quoteRibbon">
                 <em>“I would posit that if somebody’s saying I want something protected for at least
 10 years, they should seriously consider whether they should start moving to
 alternate encryption techniques now.”</em>
@@ -102,6 +108,7 @@ alternate encryption techniques now.”</em>
                 - Arvind Krishna, Chairman & CEO, IBM
                 </p>
                 </div>
+                <h1 className='silver'>For more information, contact info@omegakrypto.com.</h1>
         </div>
     </div>
 }
