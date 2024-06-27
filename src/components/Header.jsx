@@ -52,7 +52,7 @@ export default function Header() {
             <NavLink to='/ransomware' className='headerLink'>Ransomware</NavLink>
             <NavLink to='/krypto-insights' className='headerLink'>Krypto-Insights</NavLink>
             <NavLink to='/contact' className='headerLink'>About</NavLink>
-            <NavLink to='/login' className='headerLink'>Showcase</NavLink>
+            <NavLink to='/demo' className='headerLink'>Try It Out</NavLink>
         </div>
     </div>
 }

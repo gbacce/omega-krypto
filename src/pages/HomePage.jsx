@@ -64,7 +64,7 @@ cryptanalytic attacks by any means, including quantum computing.
                     Omega Krypto’s <span>IMMUNE</span> tools and processes exceed best practices for compliance
 and data privacy standards and mandates, including PCI DSS, HIPAA, GDPR, and many
 others.</p>
-<p className='center'><NavLink to='/login' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
+<p className='center'><NavLink to='/demo' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
                 </div>
                 <video controls>
                     <source src="/Home.mp4" type="video/mp4" />

@@ -45,7 +45,7 @@ your upgrade cycle is three to four years, you have to start taking action now.�
         </div>
         <div className='fullscreenTextWrapperSection spaced'>
             <p>Poly-Substitution encryption cannot prevent hacking or system intrusions, yet makes the effort fruitless and useless.  The content remains irretrievable and indecipherable to hackers, eliminating any leverage for extortion or public disclosure.</p>
-            <p className='center'><NavLink to='/login' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
+            <p className='center'><NavLink to='/demo' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
         </div>
         <div className='subsectionRibbon'>
             <div className='subsectionTitle'>
@@ -74,7 +74,7 @@ type of data:</p>
             Sorry, your browser doesn't support videos.
         </video>
         <div className='fullscreenTextWrapperSection'>
-         <p className='center'><NavLink to='/login' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
+         <p className='center'><NavLink to='/demo' className='inlineLink'>Click here</NavLink> to see Omega Krypto’s <span>IMMUNE</span> system in action.</p>
         </div>
         <div className='subsectionRibbon'>
             <div className='subsectionTitle'>
